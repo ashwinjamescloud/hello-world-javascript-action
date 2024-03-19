@@ -1,0 +1,26 @@
+name: Combine Actiones
+
+on:
+  workflow_dispatch:
+    inputs:
+      parameter1:
+        description: 'First parameter'
+        type: string   
+        default: "abc  "
+      parameter2:
+        description: 'Second parameter'
+        type: string
+        default: "def "
+       
+    
+jobs:
+  combine:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: ashwinjamescloud/hello-world-javascript-action@v1.1
+        with:
+          param1: ${{inputs.parameter1}}
+          param2: ${{inputs.parameter2}}
