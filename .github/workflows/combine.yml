@@ -24,3 +24,5 @@ jobs:
         with:
           param1: ${{inputs.parameter1}}
           param2: ${{inputs.parameter2}}
+      - name: Get the output combined word
+        run: echo "The combined is ${{ steps.combine.outputs.result }}"    
