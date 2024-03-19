@@ -8,7 +8,7 @@ try {
   // Print the inputs
   console.log(`Parameter 1: ${param1}`);
   console.log(`Parameter 2: ${param2}`);
-  console.log('Combined - ${param1} - ${param2}')
+  console.log('Combined - ${param1} - ${param2}');
 
   // Set the outputs (if needed)
   core.setOutput('result', ` ${param1} - ${param2}`);
