@@ -16,10 +16,10 @@ on:
 jobs:
   combine:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to print the combined output
     steps:
-      - name: Hello world action step
-        id: hello
+      - name: combined output step
+        id: combine
         uses: ashwinjamescloud/hello-world-javascript-action@v1.1
         with:
           param1: ${{inputs.parameter1}}
